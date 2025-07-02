@@ -1,14 +1,15 @@
-import Image from "next/image";
-import Navbar from '@/app/components/Navbar'
 
+import Navbar from '@/app/components/Navbar'
+import Header from '@/app/components/Header'
+import Foot from '@/app/components/Footer-temp'
 export default function Home() {
   return (
     <>
     <div>
       <Navbar/>
-      <h1>
-        Welcome To our Quote Generator Web App
-      </h1>
+      <Header/>
+      <Foot/>
+      
     </div>
     </>
   );
