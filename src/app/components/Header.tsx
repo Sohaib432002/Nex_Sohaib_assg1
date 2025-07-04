@@ -1,15 +1,17 @@
-const Header=()=>{
+import { url } from "node:inspector"
+
+const Header=({Feedback}:any)=>{
     return(
         <>
-        <header>
-          <div>
+        <header style={Feedback?{filter:'blur(20px) brightness(0.4)'}:{filter:'none'}} className="header_container">
+          <div className="header">
 
             <div className="heading">
               <h3 style={{color:'gray'}}>Welcome! <br /></h3>
               <h5>Qoute Genrator App</h5>
-              <div className="btn_Container header_btn">
-                <div className="btn">
-                  Explore App
+              <div className="header_btn_container">
+                <div id='#' className="header_button ">
+                  <a href="#App" style={{textDecoration:'none',color:'white'}}><button id="#App" className="btn-grad" style={{border:'none'}}> Explore App</button></a>
                 </div>
               </div>
             </div>
