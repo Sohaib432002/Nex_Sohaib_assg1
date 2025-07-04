@@ -1,6 +1,7 @@
-import { url } from "node:inspector"
-
-const Header=({Feedback}:any)=>{
+interface FeedbackPopProps {
+  Feedback: boolean;
+}
+const Header=({Feedback}:FeedbackPopProps)=>{
     return(
         <>
         <header style={Feedback?{filter:'blur(20px) brightness(0.4)'}:{filter:'none'}} className="header_container">

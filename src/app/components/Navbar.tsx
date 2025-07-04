@@ -1,6 +1,6 @@
 "use client";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-import { useState } from 'react';
+
 const Navbar = () => {
     return (
         <>

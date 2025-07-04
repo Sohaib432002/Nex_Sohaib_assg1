@@ -1,9 +1,8 @@
 "use client";
 import Navbar from '@/app/components/Navbar'
 import Header from '@/app/components/Header'
-// import Foot from '@/app/components/Footer-temp'
 import App from '@/app/components/App_section'
-import { useState } from 'react'
+import { SetStateAction, useState } from 'react'
 export default function Home() {
 
   const [Feedback, setFeedback] = useState(false)
